@@ -5,7 +5,8 @@ import subprocess
 subprocess.check_call([sys.executable, "-m", "pip", "install", "-U","prefect[databricks]"])
 
 from prefect import flow
-from prefect_databricks import DatabricksCredentials, jobs_list
+from prefect_databricks import DatabricksCredentials
+from prefect_databricks.jobs import jobs_list
 
 @flow
 def example_execute_endpoint_flow():
