@@ -2,7 +2,7 @@ import sys
 import subprocess
 
 # Install prefect with databricks if not already installed
-subprocess.check_call([sys.executable, "-m", "pip", "install", "prefect[databricks]"])
+subprocess.check_call([sys.executable, "-m", "pip", "install", "-U","prefect[databricks]"])
 
 from prefect import flow
 from prefect_databricks import DatabricksCredentials, jobs_list
