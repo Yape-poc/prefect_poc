@@ -1,3 +1,5 @@
+pip install "prefect[databricks]"
+
 from prefect_databricks import DatabricksCredentials
 databricks_credentials_block = DatabricksCredentials.load("test")
 
